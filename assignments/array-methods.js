@@ -76,7 +76,7 @@ console.log(allCaps);
 let largeShirts = [];
 
 largeShirts = runners.filter(function(element) {
-   return errors = element.shirt_size == 'L';
+   return element.shirt_size == 'L';
 })
 console.log(largeShirts);
 
@@ -100,6 +100,15 @@ runners.forEach(function(element) {
     contactInfo.push(`${element.first_name} ${element.last_name} ${element.email}`)
 });
 
-// Problem 2
+console.log(contactInfo);
 
+// Problem 2
+// The Big Boss wants to send a special thank-you note to the companies that donated more than $100. Filter the list for these donors.
+let specialDonor = []
+
+specialDonor = runners.filter(function(element) {
+    return element.donation > 100
+});
+
+console.log(specialDonor)
 // Problem 3
