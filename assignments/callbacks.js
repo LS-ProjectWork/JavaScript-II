@@ -54,12 +54,22 @@ sumNums(7, 3, function(sum) {
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+  return cb(x * y);
 }
+
+multiplyNums(2, 5, function(product) {
+  console.log(product)
+});
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  cb(list.includes(item));
 }
+
+contains('yo-yo', items, function (exists) {
+  console.log(exists)
+});
 
 /* STRETCH PROBLEM */
 
