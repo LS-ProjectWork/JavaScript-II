@@ -112,3 +112,11 @@ specialDonor = runners.filter(function(element) {
 
 console.log(specialDonor)
 // Problem 3
+// The event director has sobered up and wants all last names to lowercase.
+let allLowercase = []
+
+runners.map(function(element) {
+    allLowercase.push(element.last_name.toLowerCase())
+});
+
+console.log(allLowercase)
